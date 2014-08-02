@@ -105,7 +105,7 @@ var Auth = {
   onGotUserPermission: function() {
     var requestToken = localStorage[Auth.storageKey.requestToken];
     return Auth.getAccessToken(requestToken).then(function(data) {
-      localStorage.removeItem(Auth.requestTokenStorageKey);
+      localStorage.removeItem(Auth.storageKey.requestToken);
       localStorage[Auth.storageKey.accessToken] = data.access_token;
       localStorage[Auth.storageKey.username] = data.username;
     });
