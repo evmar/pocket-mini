@@ -8,3 +8,6 @@ capability.)
 
 This extension is the minimal code to auth into Pocket and save URLs
 into it.
+
+See also the blog post:
+http://neugierig.org/software/blog/2014/08/pocket-mini.html
